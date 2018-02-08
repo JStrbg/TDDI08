@@ -18,7 +18,7 @@ SC_MODULE(tl)
 
   //internt
   bool tl[4] = {false,false,false,false};
-  bool inc[4] = {false,false,false,false};
+  int inc[4] = {0,0,0,0};
 
   SC_HAS_PROCESS(tl);
   tl(sc_module_name name);

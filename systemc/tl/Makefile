@@ -2,7 +2,7 @@
 PROGRAM = tl.x
 
 # The source files (*.cc)
-SRCS = tl.cc
+SRCS = tl.cc input_gen.cc tl_bench.cc
 
 ##################################
 ## DO NOT CHANGE ANYTHING BELOW ##
