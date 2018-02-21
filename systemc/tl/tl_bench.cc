@@ -9,7 +9,7 @@ int sc_main(int argc, char **argv)
   // 2. the file with input data.
   assert(argc == 3);
 
-  sc_time sim_time(atof(argv[1], SC_SEC));
+  sc_time sim_time(atof(argv[1]), SC_SEC);
   char *infile = argv[2];
 
   sc_signal<bool> inc_NS_sig;
