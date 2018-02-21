@@ -12,10 +12,10 @@ int sc_main(int argc, char **argv)
   sc_time sim_time(atof(argv[1]), SC_SEC);
   char *infile = argv[2];
 
-  sc_signal<bool> inc_NS_sig;
-  sc_signal<bool> inc_SN_sig;
-  sc_signal<bool> inc_WE_sig;
-  sc_signal<bool> inc_EW_sig;
+  sc_buffer<bool> inc_NS_sig;
+  sc_buffer<bool> inc_SN_sig;
+  sc_buffer<bool> inc_WE_sig;
+  sc_buffer<bool> inc_EW_sig;
 
   tl trafficlight("tl");
   Generator gen("Generator", infile);
