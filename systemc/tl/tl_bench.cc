@@ -1,6 +1,6 @@
 #include <systemc.h>
 #include "tl.h"
-#include "input_gen"
+#include "input_gen.h"
 
 int sc_main(int argc, char **argv)
 {
