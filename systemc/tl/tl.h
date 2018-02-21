@@ -11,10 +11,6 @@ SC_MODULE(tl)
   sc_in<bool> inc_EW;
 
   //boolkanaler för ljus (används ej atm)
-  sc_out<bool> tl_NS;
-  sc_out<bool> tl_SN;
-  sc_out<bool> tl_WE;
-  sc_out<bool> tl_EW;
 
   //internt
   bool lights[4] = {false,false,false,false};
