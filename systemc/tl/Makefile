@@ -13,7 +13,7 @@ TARGET_ARCH = linux64
 
 LIBDIR = -L. -L.. -L$(SYSTEMC)/lib-$(TARGET_ARCH)
 LIBS = -Wl,-Bstatic -lsystemc -Wl,-Bdynamic -lm -lpthread
-LDFLAGS = -g
+LDFLAGS = -g -std=c++11
 
 CC = g++
 OPT = -O3
