@@ -67,6 +67,7 @@ void tl::traffic_logic()
 }
 void tl::print_lights()
 {
+  cout << endl << sc_time_stamp();
   cout << endl << "NS : " << lights[0];
   cout << endl << "SN : " << lights[1];
   cout << endl << "WE : " << lights[2];
