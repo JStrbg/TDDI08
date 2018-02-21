@@ -26,6 +26,6 @@ SC_MODULE(tl)
   void get_sensors();
   void print_lights();
   void traffic_logic();
-}
+};
 
 #endif //TL_H
