@@ -34,12 +34,12 @@ void tl::get_sensors()
 void tl::traffic_logic()
 {
   //NS || SN  om någon av dem inte redan är true samtidigt som WE || EW är true
-  if ((inc[0] || inc[1]) && !((tl[0] || tl[1]) && (inc[2] || inc[3])))
+  if ((inc[0] || inc[1]) && !((lights[0] || lights[1]) && (inc[2] || inc[3])))
   {
-    tl[0] = inc[0];
-    tl[1] = inc[1];
-    tl[2] = false;
-    tl[3] = false;
+    lights[0] = inc[0];
+    lights[1] = inc[1];
+    lights[2] = false;
+    lights[3] = false;
     if(inc[0])
       inc[0]--;
     if(inc[1])
@@ -47,10 +47,10 @@ void tl::traffic_logic()
   }
   else if(inc[2] || inc[3]) //EW || WE :==D q p
   {
-    tl[0] = false;
-    tl[1] = false;
-    tl[2] = inc[2];
-    tl[3] = inc[3];
+    lights[0] = false;
+    lights[1] = false;
+    lights[2] = inc[2];
+    lights[3] = inc[3];
     if(inc[2])
       inc[2]--;
     if(inc[3])
@@ -58,17 +58,17 @@ void tl::traffic_logic()
   }
   else
   {
-    tl[0] = false;
-    tl[1] = false;
-    tl[2] = false;
-    tl[3] = false;
+    lights[0] = false;
+    lights[1] = false;
+    lights[2] = false;
+    lights[3] = false;
   }
   print_lights();
 }
 void tl::print_lights()
 {
-  cout << endl << "NS : " << tl[0];
-  cout << endl << "SN : " << tl[1];
-  cout << endl << "WE : " << tl[2];
-  cout << endl << "EW : " << tl[3] << endl;
+  cout << endl << "NS : " << lights[0];
+  cout << endl << "SN : " << lights[1];
+  cout << endl << "WE : " << lights[2];
+  cout << endl << "EW : " << lights[3] << endl;
 }

@@ -17,7 +17,7 @@ SC_MODULE(tl)
   sc_out<bool> tl_EW;
 
   //internt
-  bool tl[4] = {false,false,false,false};
+  bool lights[4] = {false,false,false,false};
   int inc[4] = {0,0,0,0};
 
   SC_HAS_PROCESS(tl);
