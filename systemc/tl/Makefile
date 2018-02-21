@@ -13,11 +13,11 @@ TARGET_ARCH = linux64
 
 LIBDIR = -L. -L.. -L$(SYSTEMC)/lib-$(TARGET_ARCH)
 LIBS = -Wl,-Bstatic -lsystemc -Wl,-Bdynamic -lm -lpthread
-LDFLAGS = -g -std=c++11
+LDFLAGS = -g
 
 CC = g++
 OPT = -O3
-CFLAGS = -Wno-deprecated
+CFLAGS = -Wno-deprecated -std=gnu++11
 EXE = $(PROGRAM)
 
 INCDIR= -I. -I.. -I$(SYSTEMC)/include
