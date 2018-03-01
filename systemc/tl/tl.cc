@@ -45,7 +45,7 @@ void tl::traffic_logic()
     if(inc[1])
       inc[1]--;
   }
-  else if(inc[2] || inc[3]) //EW || WE :==D q p
+  else if(inc[2] || inc[3]) //EW || WE
   {
     lights[0] = false;
     lights[1] = false;
